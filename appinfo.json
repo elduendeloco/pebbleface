@@ -1,0 +1,57 @@
+{
+    "appKeys": {
+        "dummy": 0
+    },
+    "capabilities": [
+        ""
+    ],
+    "companyName": "MakeAwesomeHappen",
+    "longName": "sail",
+    "projectType": "native",
+    "resources": {
+        "media": [
+            {
+                "file": "fonts/Starck.ttf",
+                "name": "FONT_14",
+                "type": "font"
+            },
+            {
+                "file": "fonts/Starck.ttf",
+                "name": "FONT_34",
+                "type": "font"
+            },
+            {
+                "file": "fonts/Starck.ttf",
+                "name": "FONT_20",
+                "type": "font"
+            },
+            {
+                "file": "fonts/Starck.ttf",
+                "name": "FONT_24",
+                "type": "font"
+            },
+            {
+                "file": "fonts/Starck.ttf",
+                "name": "FONT_28",
+                "type": "font"
+            },
+            {
+                "file": "fonts/Starck.ttf",
+                "name": "FONT_48",
+                "type": "font"
+            },
+            {
+                "file": "images/background.png",
+                "name": "BACKGROUND",
+                "type": "png"
+            }
+        ]
+    },
+    "shortName": "sail",
+    "uuid": "c779100a-c265-4337-ae41-6e3be48a102c",
+    "versionCode": 1,
+    "versionLabel": "1.0.0",
+    "watchapp": {
+        "watchface": false
+    }
+}
