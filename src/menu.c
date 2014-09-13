@@ -156,6 +156,7 @@ static void window_load(Window *window) {
 
 // Deinitialize resources on window unload that were initialized on window load
 void window_unload(Window *window) {
+    window_destroy(window);
     simple_menu_layer_destroy(menu_layer);
 }
 
@@ -176,5 +177,5 @@ void menu_creator()
 
 void menu_destroier()
 {
-    window_destroy(menu);
+    window_stack_remove(menu);
 }
