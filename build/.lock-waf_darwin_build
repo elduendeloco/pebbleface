@@ -1,0 +1,8 @@
+argv = ['/Users/francesco/pebble-dev/PebbleSDK-2.4.1/Pebble/waf', 'configure', 'build']
+environ = {'TERM_SESSION_ID': '6731F746-AAAE-4114-B53D-23574F9C0E6F', 'SSH_AUTH_SOCK': '/tmp/launch-iCRQFt/Listeners', 'PYTHONPATH': '/Users/francesco/pebble-dev/PebbleSDK-current/bin/../.env/lib/python2.7/site-packages', 'VERSIONER_PYTHON_PREFER_32_BIT': 'no', 'TERM_PROGRAM_VERSION': '326', 'SHELL': '/bin/bash', 'LOGNAME': 'francesco', 'USER': 'francesco', 'PATH': '/Users/francesco/pebble-dev/PebbleSDK-2.4.1/arm-cs-tools/bin:/Users/francesco/pebble-dev/PebbleSDK-current/bin:/Users/francesco/pebble-dev/PebbleSDK-current/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin', 'HOME': '/Users/francesco', '_': '/Users/francesco/pebble-dev/PebbleSDK-current/bin/pebble', 'TERM_PROGRAM': 'Apple_Terminal', 'LANG': 'it_IT.UTF-8', 'TERM': 'xterm-256color', 'Apple_PubSub_Socket_Render': '/tmp/launch-BgFxmp/Render', 'VERSIONER_PYTHON_VERSION': '2.7', 'SHLVL': '1', 'OLDPWD': '/Users/francesco/GitHub', '__CF_USER_TEXT_ENCODING': '0x1F5:0:4', 'PWD': '/Users/francesco/GitHub/pebbleface', 'TMPDIR': '/var/folders/s8/q_006q89599dmv04dps7dp440000gn/T/', '__CHECKFIX1436934': '1'}
+files = ['/Users/francesco/GitHub/pebbleface/wscript']
+hash = 7057928703442474663
+options = {'files': '', 'jobs': 4, 'verbose': 0, 'nocache': False, 'progress_bar': 0, 'timestamp': None, 'distcheck_args': None, 'top': '', 'destdir': '', 'keep': 0, 'zones': '', 'debug': False, 'prefix': '/usr/local/', 'download': False, 'force': False, 'targets': '', 'out': ''}
+out_dir = '/Users/francesco/GitHub/pebbleface/build'
+run_dir = '/Users/francesco/GitHub/pebbleface'
+top_dir = '/Users/francesco/GitHub/pebbleface'
