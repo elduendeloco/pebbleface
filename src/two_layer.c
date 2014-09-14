@@ -96,7 +96,7 @@ void set_2layer_contents(int layer, char *type, char *data, char *unit)
 	}
 }	
 
-void update_data(int layer, char *data)
+void update_data2(int layer, char *data)
 {
 	if 	(layer==1)
 		text_layer_set_text(datalayer_1, data);

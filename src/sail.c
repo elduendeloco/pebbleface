@@ -252,7 +252,7 @@ static void window_config(int rows)
     {
         
         window=show_one_layer();
-        hide_two_layer();
+        hide_two_layers();
         window_set_click_config_provider(window, click_config_provider_one);
         
     }

@@ -11,28 +11,8 @@
     "resources": {
         "media": [
             {
-                "file": "images/background.png",
-                "name": "BACKGROUND",
-                "type": "png"
-            },
-            {
                 "file": "fonts/Starck.ttf",
-                "name": "FONT_48",
-                "type": "font"
-            },
-            {
-                "file": "fonts/Starck.ttf",
-                "name": "FONT_28",
-                "type": "font"
-            },
-            {
-                "file": "fonts/Starck.ttf",
-                "name": "FONT_24",
-                "type": "font"
-            },
-            {
-                "file": "fonts/Starck.ttf",
-                "name": "FONT_20",
+                "name": "FONT_14",
                 "type": "font"
             },
             {
@@ -42,8 +22,28 @@
             },
             {
                 "file": "fonts/Starck.ttf",
-                "name": "FONT_14",
+                "name": "FONT_20",
                 "type": "font"
+            },
+            {
+                "file": "fonts/Starck.ttf",
+                "name": "FONT_24",
+                "type": "font"
+            },
+            {
+                "file": "fonts/Starck.ttf",
+                "name": "FONT_28",
+                "type": "font"
+            },
+            {
+                "file": "fonts/Starck.ttf",
+                "name": "FONT_48",
+                "type": "font"
+            },
+            {
+                "file": "images/background.png",
+                "name": "BACKGROUND",
+                "type": "png"
             }
         ]
     },

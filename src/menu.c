@@ -177,5 +177,5 @@ void menu_creator()
 
 void menu_destroier()
 {
-    window_stack_remove(menu);
+    window_stack_remove(menu, true);
 }
