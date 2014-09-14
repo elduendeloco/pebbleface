@@ -114,6 +114,7 @@ void show_two_layers(void) {
     .unload = handle_window_unload,
   });
   window_stack_push(s_window, true);
+	return s_window;
 }
 
 void hide_two_layers(void) {

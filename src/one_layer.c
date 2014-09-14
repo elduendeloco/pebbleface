@@ -68,12 +68,13 @@ static void handle_window_unload(Window* window) {
   destroy_ui();
 }
 
-void show_one_layer(void) {
+static Window show_one_layer(void) {
   initialise_ui();
   window_set_window_handlers(s_window, (WindowHandlers) {
     .unload = handle_window_unload,
   });
   window_stack_push(s_window, true);
+	return s_window;
 }
 
 void hide_one_layer(void) {
