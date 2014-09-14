@@ -1,4 +1,6 @@
-void set_layer_contents(int, char *, char *, char *);
+#include <pebble.h>
+
+void set_2layer_contents(int, char *, char *, char *);
 void update_data(int, char *);
-void show_two_layers(void);
+Window * show_two_layers(void);
 void hide_two_layer(void);

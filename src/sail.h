@@ -28,6 +28,6 @@ int get_option_value ();
 void set_rows_value (int value);
 int get_rows_value ();
 char* selectText(int value);
-
+static void window_config(int);
 #endif
 

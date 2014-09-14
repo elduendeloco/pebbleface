@@ -1,0 +1,277 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		13561F9B19C5F8D0000328CE /* menu.c in Sources */ = {isa = PBXBuildFile; fileRef = 13561F9319C5F8D0000328CE /* menu.c */; };
+		13561F9C19C5F8D0000328CE /* one_layer.c in Sources */ = {isa = PBXBuildFile; fileRef = 13561F9519C5F8D0000328CE /* one_layer.c */; };
+		13561F9D19C5F8D0000328CE /* sail.c in Sources */ = {isa = PBXBuildFile; fileRef = 13561F9719C5F8D0000328CE /* sail.c */; };
+		13561F9E19C5F8D0000328CE /* two_layer.c in Sources */ = {isa = PBXBuildFile; fileRef = 13561F9919C5F8D0000328CE /* two_layer.c */; };
+		13561FA019C5FAB5000328CE /* libpebble.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 13561F9F19C5FAB5000328CE /* libpebble.a */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		13561F6A19C5F760000328CE /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = /usr/share/man/man1/;
+			dstSubfolderSpec = 0;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 1;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		13561F6C19C5F760000328CE /* pebbleface */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = pebbleface; sourceTree = BUILT_PRODUCTS_DIR; };
+		13561F9319C5F8D0000328CE /* menu.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = menu.c; sourceTree = "<group>"; };
+		13561F9419C5F8D0000328CE /* menu.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = menu.h; sourceTree = "<group>"; };
+		13561F9519C5F8D0000328CE /* one_layer.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = one_layer.c; sourceTree = "<group>"; };
+		13561F9619C5F8D0000328CE /* one_layer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = one_layer.h; sourceTree = "<group>"; };
+		13561F9719C5F8D0000328CE /* sail.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = sail.c; sourceTree = "<group>"; };
+		13561F9819C5F8D0000328CE /* sail.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = sail.h; sourceTree = "<group>"; };
+		13561F9919C5F8D0000328CE /* two_layer.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = two_layer.c; sourceTree = "<group>"; };
+		13561F9A19C5F8D0000328CE /* two_layer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = two_layer.h; sourceTree = "<group>"; };
+		13561F9F19C5FAB5000328CE /* libpebble.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libpebble.a; path = "../../pebble-dev/PebbleSDK-2.4.1/Pebble/lib/libpebble.a"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		13561F6919C5F760000328CE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				13561FA019C5FAB5000328CE /* libpebble.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		13561F6319C5F760000328CE = {
+			isa = PBXGroup;
+			children = (
+				13561F9219C5F8D0000328CE /* src */,
+				13561F6D19C5F760000328CE /* Products */,
+				13561F9F19C5FAB5000328CE /* libpebble.a */,
+			);
+			sourceTree = "<group>";
+		};
+		13561F6D19C5F760000328CE /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				13561F6C19C5F760000328CE /* pebbleface */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		13561F9219C5F8D0000328CE /* src */ = {
+			isa = PBXGroup;
+			children = (
+				13561F9319C5F8D0000328CE /* menu.c */,
+				13561F9419C5F8D0000328CE /* menu.h */,
+				13561F9519C5F8D0000328CE /* one_layer.c */,
+				13561F9619C5F8D0000328CE /* one_layer.h */,
+				13561F9719C5F8D0000328CE /* sail.c */,
+				13561F9819C5F8D0000328CE /* sail.h */,
+				13561F9919C5F8D0000328CE /* two_layer.c */,
+				13561F9A19C5F8D0000328CE /* two_layer.h */,
+			);
+			path = src;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		13561F6B19C5F760000328CE /* pebbleface */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 13561F7519C5F760000328CE /* Build configuration list for PBXNativeTarget "pebbleface" */;
+			buildPhases = (
+				13561F6819C5F760000328CE /* Sources */,
+				13561F6919C5F760000328CE /* Frameworks */,
+				13561F6A19C5F760000328CE /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = pebbleface;
+			productName = pebbleface;
+			productReference = 13561F6C19C5F760000328CE /* pebbleface */;
+			productType = "com.apple.product-type.tool";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		13561F6419C5F760000328CE /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0510;
+				ORGANIZATIONNAME = francescodicarlo;
+			};
+			buildConfigurationList = 13561F6719C5F760000328CE /* Build configuration list for PBXProject "pebbleface" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 13561F6319C5F760000328CE;
+			productRefGroup = 13561F6D19C5F760000328CE /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				13561F6B19C5F760000328CE /* pebbleface */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		13561F6819C5F760000328CE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				13561F9C19C5F8D0000328CE /* one_layer.c in Sources */,
+				13561F9D19C5F8D0000328CE /* sail.c in Sources */,
+				13561F9E19C5F8D0000328CE /* two_layer.c in Sources */,
+				13561F9B19C5F8D0000328CE /* menu.c in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		13561F7319C5F760000328CE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.9;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		13561F7419C5F760000328CE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.9;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		13561F7619C5F760000328CE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include,
+					"/Users/francesco/pebble-dev/PebbleSDK-2.4.1/Pebble/include",
+					"/Users/francesco/pebble-dev/PebbleSDK-2.4.1/Pebble/lib",
+				);
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"/Users/francesco/pebble-dev/PebbleSDK-2.4.1/Pebble/lib",
+					"/Users/francesco/pebble-dev/PebbleSDK-2.4.1/Pebble/include",
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		13561F7719C5F760000328CE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include,
+					"/Users/francesco/pebble-dev/PebbleSDK-2.4.1/Pebble/include",
+					"/Users/francesco/pebble-dev/PebbleSDK-2.4.1/Pebble/lib",
+				);
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"/Users/francesco/pebble-dev/PebbleSDK-2.4.1/Pebble/lib",
+					"/Users/francesco/pebble-dev/PebbleSDK-2.4.1/Pebble/include",
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		13561F6719C5F760000328CE /* Build configuration list for PBXProject "pebbleface" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				13561F7319C5F760000328CE /* Debug */,
+				13561F7419C5F760000328CE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		13561F7519C5F760000328CE /* Build configuration list for PBXNativeTarget "pebbleface" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				13561F7619C5F760000328CE /* Debug */,
+				13561F7719C5F760000328CE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 13561F6419C5F760000328CE /* Project object */;
+}

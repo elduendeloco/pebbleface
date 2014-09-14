@@ -1,6 +1,8 @@
 #include <pebble.h>
 #include "menu.h"
 #include "sail.h"
+#include "one_layer.h"
+#include "two_layer.h"
 
 enum {
 		STATUS,
@@ -14,6 +16,8 @@ enum {
 
 static int option=0;
 static int rows=2;
+
+Window *window;
 
 static AppSync aSync;
 static uint8_t sync_buffer[64];
@@ -61,8 +65,8 @@ static void changeWithAnimation()
 {
 		if(rows==2)
 		{
-			set_layer_contents(1, selectText(first), "N/A", "N/A");
-			set_layer_contents(1, selectText(second), "N/A", "N/A");
+			set_2layer_contents(1, selectText(first), "N/A", "N/A");
+			set_2layer_contents(1, selectText(second), "N/A", "N/A");
 		}
 		else
 		{
@@ -92,7 +96,7 @@ int get_option_value ()
 void set_rows_value (int value)
 {
     rows= value;
-    layout_config(rows);
+    window_config(rows);
     
 }
 
@@ -139,7 +143,7 @@ void sendCmd() {
     }
     
     dict_write_end(iter);
-	    APP_LOG(APP_LOG_LEVEL_INFO, "1");
+    APP_LOG(APP_LOG_LEVEL_INFO, "1");
     app_message_outbox_send();
     APP_LOG(APP_LOG_LEVEL_INFO, "2");
 }
@@ -235,6 +239,25 @@ static void click_config_provider_one(void *context) {
     window_single_click_subscribe(BUTTON_ID_DOWN, one_down_click_handler);
 }
 
+
+static void window_config(int rows)
+{
+    if (rows==2)
+    {
+        window=show_two_layers();
+        hide_one_layer();
+        window_set_click_config_provider(window, click_config_provider_two);
+    }
+    else
+    {
+        
+        window=show_one_layer();
+        hide_two_layer();
+        window_set_click_config_provider(window, click_config_provider_one);
+        
+    }
+}
+
 void in_dropped_handler(AppMessageResult reason, void *context)
 {
     APP_LOG(APP_LOG_LEVEL_INFO, "Message dropped: %s", (char*)reason);
@@ -258,15 +281,14 @@ void in_receivede_handler(DictionaryIterator *received, void *context)
     	else if(strcmp(status, "two") == 0) {
             
         	APP_LOG(APP_LOG_LEVEL_INFO, "Recieved status \"Two Row\"");
-            
-					set_layer_contents(1,
-														 dict_find(received, TEXT1)->value->cstring, 
-														 dict_find(received, DATA1)->value->cstring, 
-														 dict_find(received, UNIT1)->value->cstring);
-				  set_layer_contents(2,
-														 dict_find(received, TEXT2)->value->cstring, 
-														 dict_find(received, DATA2)->value->cstring, 
-														 dict_find(received, UNIT2)->value->cstring);
+            set_2layer_contents(1,
+                               dict_find(received, TEXT1)->value->cstring,
+                               dict_find(received, DATA1)->value->cstring,
+                               dict_find(received, UNIT1)->value->cstring);
+            set_2layer_contents(2,
+                               dict_find(received, TEXT2)->value->cstring,
+                               dict_find(received, DATA2)->value->cstring,
+                               dict_find(received, UNIT2)->value->cstring);
     	}
         
     	else {
@@ -297,10 +319,10 @@ void out_failed_handler(DictionaryIterator *failed, AppMessageResult reason, voi
 
 static void init(void) {
     
-    window = window_create();
+    window=show_two_layers();
     window_set_click_config_provider(window, click_config_provider_two);
     
-	  app_message_register_inbox_received(in_receivede_handler);
+    app_message_register_inbox_received(in_receivede_handler);
     app_message_register_inbox_dropped(in_dropped_handler);
     app_message_register_outbox_sent(out_send_handler);
     app_message_register_outbox_failed(out_failed_handler);
@@ -325,7 +347,6 @@ static void deinit(void) {
 int main(void) 
 {
     init();
-    APP_LOG(APP_LOG_LEVEL_INFO, "Done initializing, pushed window: %p", window);
     app_event_loop();
     deinit();
 }
