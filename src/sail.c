@@ -66,7 +66,7 @@ static void changeWithAnimation()
 		if(rows==2)
 		{
 			set_2layer_contents(1, selectText(first), "N/A", "N/A");
-			set_2layer_contents(1, selectText(second), "N/A", "N/A");
+			//set_2layer_contents(2, selectText(second), "N/A", "N/A");
 		}
 		else
 		{
@@ -144,7 +144,7 @@ void sendCmd() {
     
     dict_write_end(iter);
     APP_LOG(APP_LOG_LEVEL_INFO, "1");
-    app_message_outbox_send();
+    //app_message_outbox_send();
     APP_LOG(APP_LOG_LEVEL_INFO, "2");
 }
 
@@ -162,24 +162,22 @@ static void select_click_handler(ClickRecognizerRef recognizer, void *context) {
 static void two_data_up_click_handler(ClickRecognizerRef recognizer, void *context)
 {
     if (first==length[get_option_value()]-1 && second==0) {
-        first=1;
+        first=1;APP_LOG(APP_LOG_LEVEL_INFO, "Message sent");
     }
     else if (first==length[get_option_value()]-1)
-    {
+    {APP_LOG(APP_LOG_LEVEL_INFO, "Message sent2");
         first=0;
     }
     else if (first+1==second)
-    {
+    {APP_LOG(APP_LOG_LEVEL_INFO, "Message sent3");
         if (second==length[get_option_value()]-1) {
             first=0;
         }
         else
             first=first+1;
     }
-    
     changeWithAnimation();
-		sendCmd();
-    APP_LOG(APP_LOG_LEVEL_INFO, "Message sent");
+    sendCmd();
 }
 
 static void two_down_click_handler(ClickRecognizerRef recognizer, void *context) {
@@ -198,9 +196,10 @@ static void two_down_click_handler(ClickRecognizerRef recognizer, void *context)
         else
             second=second+1;
     }
-    
-    sendCmd();
+    APP_LOG(APP_LOG_LEVEL_INFO, "ATTENZIONE");
     changeWithAnimation();
+    sendCmd();
+
     APP_LOG(APP_LOG_LEVEL_INFO, "Message sent");
 }
 
@@ -210,9 +209,9 @@ static void one_data_up_click_handler(ClickRecognizerRef recognizer, void *conte
         first=0;
     else
         first++;
-    
-    sendCmd();
     changeWithAnimation();
+    sendCmd();
+    
     APP_LOG(APP_LOG_LEVEL_INFO, "Message sent");
 }
 
@@ -222,9 +221,9 @@ static void one_down_click_handler(ClickRecognizerRef recognizer, void *context)
         first=length[get_option_value()]-1;
     else
         first--;
-    
-    sendCmd();
     changeWithAnimation();
+    sendCmd();
+   
     APP_LOG(APP_LOG_LEVEL_INFO, "Message sent");
 }
 
