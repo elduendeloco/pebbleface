@@ -66,7 +66,7 @@ static void changeWithAnimation()
 		if(rows==2)
 		{
 			set_2layer_contents(1, selectText(first), "N/A", "N/A");
-			//set_2layer_contents(2, selectText(second), "N/A", "N/A");
+			set_2layer_contents(2, selectText(second), "N/A", "N/A");
 		}
 		else
 		{
@@ -85,7 +85,7 @@ void set_option_value (int value)
     option= value;
     first=0;
     second=1;
-    
+    changeWithAnimation();
 }
 
 int get_option_value ()
@@ -142,10 +142,8 @@ void sendCmd() {
             break;
     }
     
+    app_message_outbox_send();
     dict_write_end(iter);
-    APP_LOG(APP_LOG_LEVEL_INFO, "1");
-    //app_message_outbox_send();
-    APP_LOG(APP_LOG_LEVEL_INFO, "2");
 }
 
 /**
@@ -174,18 +172,22 @@ static void two_data_up_click_handler(ClickRecognizerRef recognizer, void *conte
             first=0;
         }
         else
-            first=first+1;
+            first=first+2;
     }
+    else
+        first++;
     changeWithAnimation();
     sendCmd();
 }
 
 static void two_down_click_handler(ClickRecognizerRef recognizer, void *context) {
     if (second==length[get_option_value()]-1 && first==0) {
+        APP_LOG(APP_LOG_LEVEL_INFO, "CASO 1");
         second=1;
     }
     else if (second==length[get_option_value()]-1)
     {
+        APP_LOG(APP_LOG_LEVEL_INFO, "CASO 2");
         second=0;
     }
     else if (second+1==first)
@@ -194,9 +196,13 @@ static void two_down_click_handler(ClickRecognizerRef recognizer, void *context)
             second=0;
         }
         else
-            second=second+1;
+        {
+            APP_LOG(APP_LOG_LEVEL_INFO, "CASO 3");
+            second=second+2;
+        }
     }
-    APP_LOG(APP_LOG_LEVEL_INFO, "ATTENZIONE");
+    else
+        second++;
     changeWithAnimation();
     sendCmd();
 
@@ -244,6 +250,8 @@ static void window_config(int rows)
     if (rows==2)
     {
         window=show_two_layers();
+        menu_destroier();
+        changeWithAnimation();
         hide_one_layer();
         window_set_click_config_provider(window, click_config_provider_two);
     }
@@ -251,6 +259,8 @@ static void window_config(int rows)
     {
         
         window=show_one_layer();
+        menu_destroier();
+        changeWithAnimation();
         hide_two_layers();
         window_set_click_config_provider(window, click_config_provider_one);
         
@@ -319,6 +329,7 @@ void out_failed_handler(DictionaryIterator *failed, AppMessageResult reason, voi
 static void init(void) {
     
     window=show_two_layers();
+    changeWithAnimation();
     window_set_click_config_provider(window, click_config_provider_two);
     
     app_message_register_inbox_received(in_receivede_handler);

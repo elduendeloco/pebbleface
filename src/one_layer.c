@@ -20,7 +20,7 @@ static void initialise_ui(void) {
   typelayer = text_layer_create(GRect(2, 0, 142, 28));
   text_layer_set_background_color(typelayer, GColorBlack);
   text_layer_set_text_color(typelayer, GColorWhite);
-  text_layer_set_text(typelayer, "Wind");
+  text_layer_set_text(typelayer, "...");
   text_layer_set_font(typelayer, s_res_roboto_condensed_21);
   layer_add_child(window_get_root_layer(one_window), (Layer *)typelayer);
   
@@ -28,7 +28,7 @@ static void initialise_ui(void) {
   unitlayer = text_layer_create(GRect(2, 140, 144, 28));
   text_layer_set_background_color(unitlayer, GColorBlack);
   text_layer_set_text_color(unitlayer, GColorWhite);
-  text_layer_set_text(unitlayer, "Degrees");
+  text_layer_set_text(unitlayer, "...");
   text_layer_set_font(unitlayer, s_res_roboto_condensed_21);
   layer_add_child(window_get_root_layer(one_window), (Layer *)unitlayer);
   
@@ -36,7 +36,7 @@ static void initialise_ui(void) {
   datalayer = text_layer_create(GRect(0, 55, 144, 56));
   text_layer_set_background_color(datalayer, GColorBlack);
   text_layer_set_text_color(datalayer, GColorWhite);
-  text_layer_set_text(datalayer, "345");
+  text_layer_set_text(datalayer, "...");
   text_layer_set_text_alignment(datalayer, GTextAlignmentCenter);
   text_layer_set_font(datalayer, s_res_font_48);
   layer_add_child(window_get_root_layer(one_window), (Layer *)datalayer);

@@ -1,7 +1,7 @@
 #include "two_layer.h"
 
 // BEGIN AUTO-GENERATED UI CODE; DO NOT MODIFY
-static Window *s_window;
+static Window *two_window;
 static GFont s_res_font_14;
 static GFont s_res_font_34;
 static TextLayer *typelayer_1;
@@ -13,8 +13,9 @@ static TextLayer *datalayer_2;
 static InverterLayer *s_inverterlayer_1;
 
 static void initialise_ui(void) {
-  s_window = window_create();
-  window_set_fullscreen(s_window, false);
+  two_window = window_create();
+    window_set_background_color(two_window, GColorBlack);
+  window_set_fullscreen(two_window, true);
   
   s_res_font_14 = fonts_load_custom_font(resource_get_handle(RESOURCE_ID_FONT_14));
   s_res_font_34 = fonts_load_custom_font(resource_get_handle(RESOURCE_ID_FONT_34));
@@ -24,59 +25,59 @@ static void initialise_ui(void) {
   text_layer_set_text_color(typelayer_1, GColorWhite);
   text_layer_set_text(typelayer_1, "Speed");
   text_layer_set_font(typelayer_1, s_res_font_14);
-  layer_add_child(window_get_root_layer(s_window), (Layer *)typelayer_1);
+  layer_add_child(window_get_root_layer(two_window), (Layer *)typelayer_1);
   
   // unitlayer_1
   unitlayer_1 = text_layer_create(GRect(0, 64, 144, 19));
   text_layer_set_background_color(unitlayer_1, GColorBlack);
   text_layer_set_text_color(unitlayer_1, GColorWhite);
-  text_layer_set_text(unitlayer_1, "knt");
+  text_layer_set_text(unitlayer_1, "...");
   text_layer_set_font(unitlayer_1, s_res_font_14);
-  layer_add_child(window_get_root_layer(s_window), (Layer *)unitlayer_1);
+  layer_add_child(window_get_root_layer(two_window), (Layer *)unitlayer_1);
   
   // datalayer_1
   datalayer_1 = text_layer_create(GRect(0, 21, 144, 40));
   text_layer_set_background_color(datalayer_1, GColorBlack);
   text_layer_set_text_color(datalayer_1, GColorWhite);
-  text_layer_set_text(datalayer_1, "365");
+  text_layer_set_text(datalayer_1, "...");
   text_layer_set_text_alignment(datalayer_1, GTextAlignmentCenter);
   text_layer_set_font(datalayer_1, s_res_font_34);
-  layer_add_child(window_get_root_layer(s_window), (Layer *)datalayer_1);
+  layer_add_child(window_get_root_layer(two_window), (Layer *)datalayer_1);
   
   // typelayer_2
   typelayer_2 = text_layer_create(GRect(0, 85, 144, 19));
   text_layer_set_background_color(typelayer_2, GColorBlack);
   text_layer_set_text_color(typelayer_2, GColorWhite);
-  text_layer_set_text(typelayer_2, "Wind Angle");
+  text_layer_set_text(typelayer_2, "...");
   text_layer_set_text_alignment(typelayer_2, GTextAlignmentRight);
   text_layer_set_font(typelayer_2, s_res_font_14);
-  layer_add_child(window_get_root_layer(s_window), (Layer *)typelayer_2);
+  layer_add_child(window_get_root_layer(two_window), (Layer *)typelayer_2);
   
   // unitlayer_2
   unitlayer_2 = text_layer_create(GRect(0, 149, 144, 19));
   text_layer_set_background_color(unitlayer_2, GColorBlack);
   text_layer_set_text_color(unitlayer_2, GColorWhite);
-  text_layer_set_text(unitlayer_2, "Degrees");
+  text_layer_set_text(unitlayer_2, "...");
   text_layer_set_text_alignment(unitlayer_2, GTextAlignmentRight);
   text_layer_set_font(unitlayer_2, s_res_font_14);
-  layer_add_child(window_get_root_layer(s_window), (Layer *)unitlayer_2);
+  layer_add_child(window_get_root_layer(two_window), (Layer *)unitlayer_2);
   
   // datalayer_2
   datalayer_2 = text_layer_create(GRect(0, 106, 144, 40));
   text_layer_set_background_color(datalayer_2, GColorBlack);
   text_layer_set_text_color(datalayer_2, GColorWhite);
-  text_layer_set_text(datalayer_2, "365");
+  text_layer_set_text(datalayer_2, "...");
   text_layer_set_text_alignment(datalayer_2, GTextAlignmentCenter);
   text_layer_set_font(datalayer_2, s_res_font_34);
-  layer_add_child(window_get_root_layer(s_window), (Layer *)datalayer_2);
+  layer_add_child(window_get_root_layer(two_window), (Layer *)datalayer_2);
   
   // s_inverterlayer_1
   s_inverterlayer_1 = inverter_layer_create(GRect(0, 82, 144, 2));
-  layer_add_child(window_get_root_layer(s_window), (Layer *)s_inverterlayer_1);
+  layer_add_child(window_get_root_layer(two_window), (Layer *)s_inverterlayer_1);
 }
 
 static void destroy_ui(void) {
-  window_destroy(s_window);
+  window_destroy(two_window);
   text_layer_destroy(typelayer_1);
   text_layer_destroy(unitlayer_1);
   text_layer_destroy(datalayer_1);

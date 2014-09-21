@@ -1,0 +1,143 @@
+Tpebbleface
+v6
+r1
+cCheck dependencies
+cCompileC build/pebbleface.build/Release/pebbleface.build/Objects-normal/x86_64/one_layer.o /Users/francesco/GitHub/pebbleface/src/one_layer.c normal x86_64 c com.apple.compilers.llvm.clang.1_0.compiler
+cCompileC build/pebbleface.build/Release/pebbleface.build/Objects-normal/x86_64/sail.o /Users/francesco/GitHub/pebbleface/src/sail.c normal x86_64 c com.apple.compilers.llvm.clang.1_0.compiler
+cCompileC build/pebbleface.build/Release/pebbleface.build/Objects-normal/x86_64/two_layer.o /Users/francesco/GitHub/pebbleface/src/two_layer.c normal x86_64 c com.apple.compilers.llvm.clang.1_0.compiler
+cCompileC build/pebbleface.build/Release/pebbleface.build/Objects-normal/x86_64/menu.o /Users/francesco/GitHub/pebbleface/src/menu.c normal x86_64 c com.apple.compilers.llvm.clang.1_0.compiler
+
+N/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/SDKSettings.plist
+c000000005281370C000000000000044C
+t1384199948
+s1100
+
+N/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/System/Library/CoreServices/SystemVersion.plist
+c00000000531F3E5000000000000001DE
+t1394556496
+s478
+
+N/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/5.1/include/module.map
+c00000000531F3E520000000000000ADC
+t1394556498
+s2780
+
+N/Users/francesco/GitHub/pebbleface/build/pebbleface.build/Release/pebbleface.build/Objects-normal/x86_64/menu.o
+t2
+s0
+
+N/Users/francesco/GitHub/pebbleface/build/pebbleface.build/Release/pebbleface.build/Objects-normal/x86_64/one_layer.o
+t2
+s0
+
+N/Users/francesco/GitHub/pebbleface/build/pebbleface.build/Release/pebbleface.build/Objects-normal/x86_64/sail.o
+t2
+s0
+
+N/Users/francesco/GitHub/pebbleface/build/pebbleface.build/Release/pebbleface.build/Objects-normal/x86_64/two_layer.o
+t2
+s0
+
+N/Users/francesco/GitHub/pebbleface/src/menu.c
+c000000005415D3A7000000000000162F
+t1410716583
+s5679
+
+N/Users/francesco/GitHub/pebbleface/src/one_layer.c
+c000000005415E9350000000000000A19
+t1410722101
+s2585
+
+N/Users/francesco/GitHub/pebbleface/src/sail.c
+c00000000541EDC420000000000002439
+t1411308610
+s9273
+
+N/Users/francesco/GitHub/pebbleface/src/two_layer.c
+c000000005415EB330000000000001234
+t1410722611
+s4660
+
+CCheck dependencies
+r0
+lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection18"Check dependencies18"Check dependenciesf015994017cfb941^e0d8cf4017cfb941^---0#1#1#--18"Check dependencies36"D6B19B36-6E8D-4B0B-9634-7CFB3DA8EB4B-
+
+CCompileC build/pebbleface.build/Release/pebbleface.build/Objects-normal/x86_64/menu.o /Users/francesco/GitHub/pebbleface/src/menu.c normal x86_64 c com.apple.compilers.llvm.clang.1_0.compiler
+s433002304.820175
+e433002304.948176
+r0
+xCompileC
+xbuild/pebbleface.build/Release/pebbleface.build/Objects-normal/x86_64/menu.o
+x/Users/francesco/GitHub/pebbleface/src/menu.c
+xnormal
+xx86_64
+xc
+xcom.apple.compilers.llvm.clang.1_0.compiler
+o/Users/francesco/GitHub/pebbleface/src/menu.c:10:10: fatal error: 'pebble.h' file not found
+o#include "pebble.h"
+o         ^
+o1 error generated.
+lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection53"Compile /Users/francesco/GitHub/pebbleface/src/menu.c156"CompileC build/pebbleface.build/Release/pebbleface.build/Objects-normal/x86_64/menu.o src/menu.c normal x86_64 c com.apple.compilers.llvm.clang.1_0.compilera512d24017cfb941^c11ef34017cfb941^-142"/Users/francesco/GitHub/pebbleface/src/menu.c:10:10: fatal error: 'pebble.h' file not found#include "pebble.h"         ^1 error generated.1(36%IDEClangDiagnosticActivityLogMessage2@25"'pebble.h' file not found-433002304#18446744073709551615#0#-2#27"com.apple.dt.IDE.diagnostic23%DVTTextDocumentLocation3@52"file:///Users/francesco/GitHub/pebbleface/src/menu.c0000000000000000^9#9#9#9#149#0#29"Lexical or Preprocessor Issue--0#0#1#-19%DVTDocumentLocation4@52"file:///Users/francesco/GitHub/pebbleface/src/menu.c0000000000000000^2684"CompileC build/pebbleface.build/Release/pebbleface.build/Objects-normal/x86_64/menu.o src/menu.c normal x86_64 c com.apple.compilers.llvm.clang.1_0.compiler    cd /Users/francesco/GitHub/pebbleface    export LANG=en_US.US-ASCII    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x c -arch x86_64 -fmessage-length=0 -fdiagnostics-show-note-include-stack -fmacro-backtrace-limit=0 -std=gnu99 -fmodules -Wno-trigraphs -fpascal-strings -Os -Wno-missing-field-initializers -Wno-missing-prototypes -Werror=return-type -Werror=deprecated-objc-isa-usage -Werror=objc-root-class -Wno-missing-braces -Wparentheses -Wswitch -Wunused-function -Wno-unused-label -Wno-unused-parameter -Wunused-variable -Wunused-value -Wempty-body -Wconditional-uninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wconstant-conversion -Wint-conversion -Wbool-conversion -Wenum-conversion -Wshorten-64-to-32 -Wpointer-sign -Wno-newline-eof -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk -fasm-blocks -fstrict-aliasing -Wdeprecated-declarations -mmacosx-version-min=10.9 -g -fvisibility=hidden -Wno-sign-conversion -iquote /Users/francesco/GitHub/pebbleface/build/pebbleface.build/Release/pebbleface.build/pebbleface-generated-files.hmap -I/Users/francesco/GitHub/pebbleface/build/pebbleface.build/Release/pebbleface.build/pebbleface-own-target-headers.hmap -I/Users/francesco/GitHub/pebbleface/build/pebbleface.build/Release/pebbleface.build/pebbleface-all-target-headers.hmap -iquote /Users/francesco/GitHub/pebbleface/build/pebbleface.build/Release/pebbleface.build/pebbleface-project-headers.hmap -I/Users/francesco/GitHub/pebbleface/build/Release/include -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include -I/Users/francesco/pebble-dev/PebbleSDK-2.4.1/Pebble/include -I/Users/francesco/pebble-dev/PebbleSDK-2.4.1/Pebble/lib -I/Users/francesco/GitHub/pebbleface/build/pebbleface.build/Release/pebbleface.build/DerivedSources/x86_64 -I/Users/francesco/GitHub/pebbleface/build/pebbleface.build/Release/pebbleface.build/DerivedSources -F/Users/francesco/GitHub/pebbleface/build/Release -MMD -MT dependencies -MF /Users/francesco/GitHub/pebbleface/build/pebbleface.build/Release/pebbleface.build/Objects-normal/x86_64/menu.d --serialize-diagnostics /Users/francesco/GitHub/pebbleface/build/pebbleface.build/Release/pebbleface.build/Objects-normal/x86_64/menu.dia -c /Users/francesco/GitHub/pebbleface/src/menu.c -o /Users/francesco/GitHub/pebbleface/build/pebbleface.build/Release/pebbleface.build/Objects-normal/x86_64/menu.o36"D37E8F3C-8A02-48EA-AC7B-55AFEA08751A-
+b81DA2D78-2686-4908-B59C-23B7E3AB247F
+
+CCompileC build/pebbleface.build/Release/pebbleface.build/Objects-normal/x86_64/one_layer.o /Users/francesco/GitHub/pebbleface/src/one_layer.c normal x86_64 c com.apple.compilers.llvm.clang.1_0.compiler
+s433002304.819102
+e433002304.948181
+r0
+xCompileC
+xbuild/pebbleface.build/Release/pebbleface.build/Objects-normal/x86_64/one_layer.o
+x/Users/francesco/GitHub/pebbleface/src/one_layer.c
+xnormal
+xx86_64
+xc
+xcom.apple.compilers.llvm.clang.1_0.compiler
+o/Users/francesco/GitHub/pebbleface/src/one_layer.c:2:10: fatal error: 'pebble.h' file not found
+o#include <pebble.h>
+o         ^
+o1 error generated.
+lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection58"Compile /Users/francesco/GitHub/pebbleface/src/one_layer.c166"CompileC build/pebbleface.build/Release/pebbleface.build/Objects-normal/x86_64/one_layer.o src/one_layer.c normal x86_64 c com.apple.compilers.llvm.clang.1_0.compiler1f0ed24017cfb941^0726f34017cfb941^-146"/Users/francesco/GitHub/pebbleface/src/one_layer.c:2:10: fatal error: 'pebble.h' file not found#include <pebble.h>         ^1 error generated.1(36%IDEClangDiagnosticActivityLogMessage2@25"'pebble.h' file not found-433002304#18446744073709551615#0#-2#27"com.apple.dt.IDE.diagnostic23%DVTTextDocumentLocation3@57"file:///Users/francesco/GitHub/pebbleface/src/one_layer.c0000000000000000^1#9#1#9#10#0#29"Lexical or Preprocessor Issue--0#0#1#-19%DVTDocumentLocation4@57"file:///Users/francesco/GitHub/pebbleface/src/one_layer.c0000000000000000^2714"CompileC build/pebbleface.build/Release/pebbleface.build/Objects-normal/x86_64/one_layer.o src/one_layer.c normal x86_64 c com.apple.compilers.llvm.clang.1_0.compiler    cd /Users/francesco/GitHub/pebbleface    export LANG=en_US.US-ASCII    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x c -arch x86_64 -fmessage-length=0 -fdiagnostics-show-note-include-stack -fmacro-backtrace-limit=0 -std=gnu99 -fmodules -Wno-trigraphs -fpascal-strings -Os -Wno-missing-field-initializers -Wno-missing-prototypes -Werror=return-type -Werror=deprecated-objc-isa-usage -Werror=objc-root-class -Wno-missing-braces -Wparentheses -Wswitch -Wunused-function -Wno-unused-label -Wno-unused-parameter -Wunused-variable -Wunused-value -Wempty-body -Wconditional-uninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wconstant-conversion -Wint-conversion -Wbool-conversion -Wenum-conversion -Wshorten-64-to-32 -Wpointer-sign -Wno-newline-eof -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk -fasm-blocks -fstrict-aliasing -Wdeprecated-declarations -mmacosx-version-min=10.9 -g -fvisibility=hidden -Wno-sign-conversion -iquote /Users/francesco/GitHub/pebbleface/build/pebbleface.build/Release/pebbleface.build/pebbleface-generated-files.hmap -I/Users/francesco/GitHub/pebbleface/build/pebbleface.build/Release/pebbleface.build/pebbleface-own-target-headers.hmap -I/Users/francesco/GitHub/pebbleface/build/pebbleface.build/Release/pebbleface.build/pebbleface-all-target-headers.hmap -iquote /Users/francesco/GitHub/pebbleface/build/pebbleface.build/Release/pebbleface.build/pebbleface-project-headers.hmap -I/Users/francesco/GitHub/pebbleface/build/Release/include -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include -I/Users/francesco/pebble-dev/PebbleSDK-2.4.1/Pebble/include -I/Users/francesco/pebble-dev/PebbleSDK-2.4.1/Pebble/lib -I/Users/francesco/GitHub/pebbleface/build/pebbleface.build/Release/pebbleface.build/DerivedSources/x86_64 -I/Users/francesco/GitHub/pebbleface/build/pebbleface.build/Release/pebbleface.build/DerivedSources -F/Users/francesco/GitHub/pebbleface/build/Release -MMD -MT dependencies -MF /Users/francesco/GitHub/pebbleface/build/pebbleface.build/Release/pebbleface.build/Objects-normal/x86_64/one_layer.d --serialize-diagnostics /Users/francesco/GitHub/pebbleface/build/pebbleface.build/Release/pebbleface.build/Objects-normal/x86_64/one_layer.dia -c /Users/francesco/GitHub/pebbleface/src/one_layer.c -o /Users/francesco/GitHub/pebbleface/build/pebbleface.build/Release/pebbleface.build/Objects-normal/x86_64/one_layer.o36"9025417B-B286-4072-BAF0-3AE4484AF9B2-
+b81DA2D78-2686-4908-B59C-23B7E3AB247F
+
+CCompileC build/pebbleface.build/Release/pebbleface.build/Objects-normal/x86_64/sail.o /Users/francesco/GitHub/pebbleface/src/sail.c normal x86_64 c com.apple.compilers.llvm.clang.1_0.compiler
+s433002304.819421
+e433002304.948115
+r0
+xCompileC
+xbuild/pebbleface.build/Release/pebbleface.build/Objects-normal/x86_64/sail.o
+x/Users/francesco/GitHub/pebbleface/src/sail.c
+xnormal
+xx86_64
+xc
+xcom.apple.compilers.llvm.clang.1_0.compiler
+o/Users/francesco/GitHub/pebbleface/src/sail.c:1:10: fatal error: 'pebble.h' file not found
+o#include <pebble.h>
+o         ^
+o1 error generated.
+lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection53"Compile /Users/francesco/GitHub/pebbleface/src/sail.c156"CompileC build/pebbleface.build/Release/pebbleface.build/Objects-normal/x86_64/sail.o src/sail.c normal x86_64 c com.apple.compilers.llvm.clang.1_0.compilerd712d24017cfb941^69fcf24017cfb941^-141"/Users/francesco/GitHub/pebbleface/src/sail.c:1:10: fatal error: 'pebble.h' file not found#include <pebble.h>         ^1 error generated.1(36%IDEClangDiagnosticActivityLogMessage2@25"'pebble.h' file not found-433002304#18446744073709551615#0#-2#27"com.apple.dt.IDE.diagnostic23%DVTTextDocumentLocation3@52"file:///Users/francesco/GitHub/pebbleface/src/sail.c0000000000000000^0#9#0#9#9#0#29"Lexical or Preprocessor Issue--0#0#1#-19%DVTDocumentLocation4@52"file:///Users/francesco/GitHub/pebbleface/src/sail.c0000000000000000^2684"CompileC build/pebbleface.build/Release/pebbleface.build/Objects-normal/x86_64/sail.o src/sail.c normal x86_64 c com.apple.compilers.llvm.clang.1_0.compiler    cd /Users/francesco/GitHub/pebbleface    export LANG=en_US.US-ASCII    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x c -arch x86_64 -fmessage-length=0 -fdiagnostics-show-note-include-stack -fmacro-backtrace-limit=0 -std=gnu99 -fmodules -Wno-trigraphs -fpascal-strings -Os -Wno-missing-field-initializers -Wno-missing-prototypes -Werror=return-type -Werror=deprecated-objc-isa-usage -Werror=objc-root-class -Wno-missing-braces -Wparentheses -Wswitch -Wunused-function -Wno-unused-label -Wno-unused-parameter -Wunused-variable -Wunused-value -Wempty-body -Wconditional-uninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wconstant-conversion -Wint-conversion -Wbool-conversion -Wenum-conversion -Wshorten-64-to-32 -Wpointer-sign -Wno-newline-eof -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk -fasm-blocks -fstrict-aliasing -Wdeprecated-declarations -mmacosx-version-min=10.9 -g -fvisibility=hidden -Wno-sign-conversion -iquote /Users/francesco/GitHub/pebbleface/build/pebbleface.build/Release/pebbleface.build/pebbleface-generated-files.hmap -I/Users/francesco/GitHub/pebbleface/build/pebbleface.build/Release/pebbleface.build/pebbleface-own-target-headers.hmap -I/Users/francesco/GitHub/pebbleface/build/pebbleface.build/Release/pebbleface.build/pebbleface-all-target-headers.hmap -iquote /Users/francesco/GitHub/pebbleface/build/pebbleface.build/Release/pebbleface.build/pebbleface-project-headers.hmap -I/Users/francesco/GitHub/pebbleface/build/Release/include -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include -I/Users/francesco/pebble-dev/PebbleSDK-2.4.1/Pebble/include -I/Users/francesco/pebble-dev/PebbleSDK-2.4.1/Pebble/lib -I/Users/francesco/GitHub/pebbleface/build/pebbleface.build/Release/pebbleface.build/DerivedSources/x86_64 -I/Users/francesco/GitHub/pebbleface/build/pebbleface.build/Release/pebbleface.build/DerivedSources -F/Users/francesco/GitHub/pebbleface/build/Release -MMD -MT dependencies -MF /Users/francesco/GitHub/pebbleface/build/pebbleface.build/Release/pebbleface.build/Objects-normal/x86_64/sail.d --serialize-diagnostics /Users/francesco/GitHub/pebbleface/build/pebbleface.build/Release/pebbleface.build/Objects-normal/x86_64/sail.dia -c /Users/francesco/GitHub/pebbleface/src/sail.c -o /Users/francesco/GitHub/pebbleface/build/pebbleface.build/Release/pebbleface.build/Objects-normal/x86_64/sail.o36"21326463-B362-4CF2-9350-DD624C1F53DB-
+b81DA2D78-2686-4908-B59C-23B7E3AB247F
+
+CCompileC build/pebbleface.build/Release/pebbleface.build/Objects-normal/x86_64/two_layer.o /Users/francesco/GitHub/pebbleface/src/two_layer.c normal x86_64 c com.apple.compilers.llvm.clang.1_0.compiler
+s433002304.819756
+e433002304.948669
+r0
+xCompileC
+xbuild/pebbleface.build/Release/pebbleface.build/Objects-normal/x86_64/two_layer.o
+x/Users/francesco/GitHub/pebbleface/src/two_layer.c
+xnormal
+xx86_64
+xc
+xcom.apple.compilers.llvm.clang.1_0.compiler
+oIn file included from /Users/francesco/GitHub/pebbleface/src/two_layer.c:1:
+o/Users/francesco/GitHub/pebbleface/src/two_layer.h:1:10: fatal error: 'pebble.h' file not found
+o#include <pebble.h>
+o         ^
+o1 error generated.
+lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection58"Compile /Users/francesco/GitHub/pebbleface/src/two_layer.c166"CompileC build/pebbleface.build/Release/pebbleface.build/Objects-normal/x86_64/two_layer.o src/two_layer.c normal x86_64 c com.apple.compilers.llvm.clang.1_0.compilerfc1dd24017cfb941^105af34017cfb941^-222"In file included from /Users/francesco/GitHub/pebbleface/src/two_layer.c:1:/Users/francesco/GitHub/pebbleface/src/two_layer.h:1:10: fatal error: 'pebble.h' file not found#include <pebble.h>         ^1 error generated.1(36%IDEClangDiagnosticActivityLogMessage2@25"'pebble.h' file not found-433002304#18446744073709551615#0#1(2@75"In file included from /Users/francesco/GitHub/pebbleface/src/two_layer.c:1:-433002304#18446744073709551615#0#-0#27"com.apple.dt.IDE.diagnostic23%DVTTextDocumentLocation3@57"file:///Users/francesco/GitHub/pebbleface/src/two_layer.c0000000000000000^0#9#0#9#9#0#21"Apple LLVM 5.0 Notice--2#27"com.apple.dt.IDE.diagnostic3@57"file:///Users/francesco/GitHub/pebbleface/src/two_layer.h0000000000000000^0#9#0#9#9#0#29"Lexical or Preprocessor Issue--0#0#1#-19%DVTDocumentLocation4@57"file:///Users/francesco/GitHub/pebbleface/src/two_layer.c0000000000000000^2714"CompileC build/pebbleface.build/Release/pebbleface.build/Objects-normal/x86_64/two_layer.o src/two_layer.c normal x86_64 c com.apple.compilers.llvm.clang.1_0.compiler    cd /Users/francesco/GitHub/pebbleface    export LANG=en_US.US-ASCII    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x c -arch x86_64 -fmessage-length=0 -fdiagnostics-show-note-include-stack -fmacro-backtrace-limit=0 -std=gnu99 -fmodules -Wno-trigraphs -fpascal-strings -Os -Wno-missing-field-initializers -Wno-missing-prototypes -Werror=return-type -Werror=deprecated-objc-isa-usage -Werror=objc-root-class -Wno-missing-braces -Wparentheses -Wswitch -Wunused-function -Wno-unused-label -Wno-unused-parameter -Wunused-variable -Wunused-value -Wempty-body -Wconditional-uninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wconstant-conversion -Wint-conversion -Wbool-conversion -Wenum-conversion -Wshorten-64-to-32 -Wpointer-sign -Wno-newline-eof -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk -fasm-blocks -fstrict-aliasing -Wdeprecated-declarations -mmacosx-version-min=10.9 -g -fvisibility=hidden -Wno-sign-conversion -iquote /Users/francesco/GitHub/pebbleface/build/pebbleface.build/Release/pebbleface.build/pebbleface-generated-files.hmap -I/Users/francesco/GitHub/pebbleface/build/pebbleface.build/Release/pebbleface.build/pebbleface-own-target-headers.hmap -I/Users/francesco/GitHub/pebbleface/build/pebbleface.build/Release/pebbleface.build/pebbleface-all-target-headers.hmap -iquote /Users/francesco/GitHub/pebbleface/build/pebbleface.build/Release/pebbleface.build/pebbleface-project-headers.hmap -I/Users/francesco/GitHub/pebbleface/build/Release/include -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include -I/Users/francesco/pebble-dev/PebbleSDK-2.4.1/Pebble/include -I/Users/francesco/pebble-dev/PebbleSDK-2.4.1/Pebble/lib -I/Users/francesco/GitHub/pebbleface/build/pebbleface.build/Release/pebbleface.build/DerivedSources/x86_64 -I/Users/francesco/GitHub/pebbleface/build/pebbleface.build/Release/pebbleface.build/DerivedSources -F/Users/francesco/GitHub/pebbleface/build/Release -MMD -MT dependencies -MF /Users/francesco/GitHub/pebbleface/build/pebbleface.build/Release/pebbleface.build/Objects-normal/x86_64/two_layer.d --serialize-diagnostics /Users/francesco/GitHub/pebbleface/build/pebbleface.build/Release/pebbleface.build/Objects-normal/x86_64/two_layer.dia -c /Users/francesco/GitHub/pebbleface/src/two_layer.c -o /Users/francesco/GitHub/pebbleface/build/pebbleface.build/Release/pebbleface.build/Objects-normal/x86_64/two_layer.o36"F47568D9-06FF-4799-A107-3A51F35FE210-
+b81DA2D78-2686-4908-B59C-23B7E3AB247F
+
+CGenerateDSYMFile /Users/francesco/GitHub/pebbleface/build/Release/pebbleface.dSYM /Users/francesco/GitHub/pebbleface/build/Release/pebbleface
+r0
+
+CLd /Users/francesco/GitHub/pebbleface/build/Release/pebbleface normal x86_64
+r0
+
